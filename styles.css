@@ -1,0 +1,545 @@
+/* SECCION 1 */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #000;
+    margin: 0;
+}
+
+.section-1,
+.imagen-principal{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.6),
+        rgba(0,0,0,0.6)
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+
+
+
+
+.imagen-principal{
+    position: absolute;
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+.header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.imagen-uno{
+    width: 5.5rem;
+    height: 4rem;
+    fill: #e50914;
+    margin-left: 1.4rem;
+}
+
+
+.nav{
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.idioma{
+    background-color: transparent;
+    color: #fff;
+    font-size: .9rem;
+    height: 1.65rem;
+    padding: 0 .2rem;
+    border-color: rgb(211, 202, 202);
+    border-radius: 2px;
+    margin-right: .7rem;
+    cursor: pointer;
+}
+
+.idioma option{
+    background-color: rgb(160, 156, 156);
+    color: #000;
+}
+
+.help, .red-button{
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: .45rem .9rem;
+    border-radius: 2px;
+    font-size: .9rem;
+    margin-left: .3rem;
+}
+
+
+
+
+
+
+/* TITULO Y PARRAFO PRINCIPAL*/
+
+
+.text-title-uno{
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 3.3rem;
+}
+
+.text-title-uno h1{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.text-title-uno p{
+    margin-top: 1rem;
+}
+
+
+
+
+
+
+
+/* FORMULARIO */
+
+
+.login-uno{
+    color: #fff;
+    font-size: 1.125rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 7rem;
+
+}
+
+
+.email{
+    width: 85%;
+    height: 2.6rem;
+    font-size: .9rem;
+    padding-left: .5rem;
+    outline: none;
+}
+
+
+.comenzar{
+    padding: .6rem .9rem;
+    margin-top: 1rem;
+    height: 2.8rem;
+    color: #fff;
+    background-color: #e50914;
+    border-style: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+    animation: boton 5s ease infinite;
+}
+
+@keyframes boton {
+    0%{
+        transform: translateX(-70px);
+    }
+
+    50%{
+        transform: translateX(70px);
+    }
+
+
+    100%{
+        transform: translateX(-70px);
+        
+    }
+}
+
+
+
+
+
+
+/* SECCION 2,3,4 y 5 COMPARTEN PROPIEDADES */
+
+.section-2,
+.section-3,
+.section-4,
+.section-5{
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+
+.divisor{
+   width: 100%;
+   height: .5rem;
+   margin: 0;
+   background-color: #222;
+   border-style: none;
+}
+
+p:not(.netflix-arg){
+    font-size: 1.125rem;
+    display: inline-block;
+    width: 80%;
+}
+
+h2{
+    font-size: 1.625rem;
+    display: inline-block;
+    width: 80%;
+    text-align: center;
+}
+
+.imagen-dos img,
+.imagen-tres img,
+.imagen-cuatro img,
+.imagen-cinco img{
+    width: 400px;
+    height: 350px;
+    background-size: cover;
+    margin-top: .7rem;
+}
+
+
+
+
+
+
+/* SECCION 6 */
+
+.section-6{
+    color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* ACORDEON */
+
+.preguntas{
+    text-align: center;
+}
+
+.preguntas-frecuentes{
+    background-color: #000;
+    width: 90%;
+    cursor: pointer;
+}
+
+.preguntas-frecuentes details{
+    width: 100%;
+    background-color: #303030;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: .6rem;
+    padding: .7rem 0;
+}
+
+
+
+
+/* TITULO Y PARRAFO DEL ACORDEON (SUMMARY Y P) */
+
+
+
+
+/* • TITULO */
+
+.preguntas-frecuentes summary{
+    list-style: none;
+}
+
+.preguntas-frecuentes summary::before{
+    content: '+';
+    padding-left: .8rem;
+    padding-right: 3rem;
+}
+
+.preguntas-frecuentes details[open] summary::before{
+    content: '+';
+    padding-left: .8rem;
+    padding-right: 3rem;
+    color: rgb(13, 199, 13);
+}
+
+
+
+/* • PARRAFO */
+
+.preguntas-frecuentes p{
+    max-width: 100%;
+    padding-left: 4.7rem;
+}
+
+.border-help{
+    background-color: #303030;
+    border-style: none;
+    border-top: solid thin #000;
+    margin-top: .7rem;
+}
+
+
+
+
+
+/* FORMULARIO */
+
+.login-dos{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.login-dos p{
+    margin-bottom: .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECCION 7 */
+
+.footer{
+    background-color: #000;
+    color: #737373;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+
+.contact,
+.detalles{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+.footer-links{
+    width: 100%;
+    border-top: dashed thin #303030;
+    border-bottom: dashed thin #303030;
+    font-size: .9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-links li{
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: #737373;
+}
+
+
+
+/* ANIMACIONES Y EFECTOS */
+
+.red-button:hover{
+    background-color: #e0222b;
+    border-bottom: solid thin #fff;
+}
+
+.comenzar:hover{
+    background-color: #e0222b;
+    animation-play-state: paused;
+}
+
+.idioma:hover{
+    transition: ease .3s;
+    border-color: rgb(13, 199, 13);
+}
+
+.footer a:hover{
+    color: #fff;
+    border-bottom: solid thin rgb(13, 199, 13);
+    padding-bottom: .5rem;
+    transition: ease .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERY */
+
+@media (min-width: 720px){
+
+
+/* HEADER */
+
+
+.imagen-uno{
+    width: 9rem;
+    margin-left: 4rem;
+}
+
+.nav{
+    margin-right: 3.5rem;
+}
+
+.idioma{
+    height: 2.1rem;
+    margin-right: 2rem;
+}
+
+.help, .red-button{
+    padding: .6rem .9rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+
+/* TEXTO PRINCIPAL */
+
+.text-title-uno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 7.5rem;
+
+
+}
+
+.text-title-uno h1{
+    width: 70%;
+    font-size: 2.8rem;
+}
+
+.text-title-uno p{
+    font-size: 1.6rem;
+}
+
+
+
+
+/* FORMULARIO PRINCIPAL */
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    height: 4rem;
+
+}
+
+.email{
+    width: 50%;
+    height: 91.2%;
+    margin: 0;
+}
+
+.comenzar{
+    width: 20%;
+    margin: 0;
+    height: 100%;
+    outline: none;
+    border-radius: 0;
+    font-size: 1.5rem;
+
+    animation: boton 3s infinite both;
+
+}
+
+
+/* IMAGENES */
+
+.imagen-dos img,
+.imagen-tres img,
+.imagen-cuatro img,
+.imagen-cinco img{
+    width: 500px;
+    height: 400px;
+    background-size: cover;
+    margin-top: 1.5rem;
+}
+
+
+
+/* ANIMACIONES */
+
+
+
+
+@keyframes boton {
+    0%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(70px);
+    }
+
+
+    100%{
+        transform: translateX(0);
+    }
+
+}
+
+}
+
